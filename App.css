@@ -1,0 +1,34 @@
+*{
+  box-sizing: border-box;
+}
+.main{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 40px;
+  flex: 25%;
+  background-color: gray;
+}
+.middle{
+  height: 100vh;
+  flex: 50%;
+  background-color:blanchedalmond;
+}
+.right{
+  height: 100vh;
+  flex: 25%;
+  background-color: chartreuse;
+}
+.profile{
+  display: flex;
+  flex: 25%;
+}
+
+.txt{
+  display: flex;
+}
