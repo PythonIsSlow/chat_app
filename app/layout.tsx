@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import { ContactList } from "./page";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className=" flex flex-row w-screen h-screen overflow-hidden gap-5" suppressHydrationWarning>
+          <ContactList />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
